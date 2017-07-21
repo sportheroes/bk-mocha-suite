@@ -23,15 +23,15 @@
   },
   "homepage": "https://github.com/muonjs/mocha-suit#readme",
   "dependencies": {
-    "@types/bluebird": "^3.5.2",
+    "@types/bluebird": "^3.5.8",
     "underscore": "^1.8.3"
   },
   "types": "./mocha-suit.d.ts",
   "devDependencies": {
-    "bluebird": "^3.3.1",
+    "bluebird": "^3.5.0",
     "expect.js": "^0.3.1",
-    "mocha": "^2.4.5",
-    "should": "^8.2.2",
-    "sinon": "^1.17.3"
+    "mocha": "^3.4.2",
+    "should": "^11.2.1",
+    "sinon": "^2.3.8"
   }
 }
