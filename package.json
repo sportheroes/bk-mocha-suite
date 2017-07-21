@@ -1,7 +1,7 @@
 {
-  "name": "mocha-suit",
   "version": "0.5.2",
-  "description": "Suit for your mocha tests",
+  "name": "@sportheroes/bk-mocha-suite",
+  "description": "Suite for your mocha tests",
   "main": "app.js",
   "scripts": {
     "test": "mocha"
