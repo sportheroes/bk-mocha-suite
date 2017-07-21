@@ -33,8 +33,9 @@ global.setAfterAllMethod = global.afterAllMethod;
 global.setAfterMethod = global.afterMethod;
 
 const blue = input => chalk.keyword('slateblue').bold(input);
-const lightblue = input => chalk.keyword('dodgerblue').bold(input);
 const green = input => chalk.keyword('forestgreen').bold(input);
+const lightblue = input => chalk.keyword('dodgerblue').bold(input);
+const orange = input => chalk.keyword('gold').bold(input);
 
 module.exports = function ({ project, category, service, method }, ctx, f) {
   let CASE_COUNT = 0;
@@ -61,8 +62,6 @@ module.exports = function ({ project, category, service, method }, ctx, f) {
   }
 
   var TestSuit = function Suit(msg, _ctx) {
-    console.log('CALLED CONSTRUCTOR WITH', msg);
-
     if (utils.isSuitInstance(this)) {
       if (msg instanceof Object) {
         _ctx = msg;
@@ -140,13 +139,12 @@ module.exports = function ({ project, category, service, method }, ctx, f) {
 
   IT_METHODS.concat(THAT_METHODS).forEach(function (callName) {
     TestSuit[callName] = function (msg, f) {
-      const completeLabel = `${getCaseID()} / ${msg}`;
       if (utils.isSuit(msg)) {
         utils.pushNewCall(this, callName, {
           suit: msg
         });
       } else {
-        msg = String(msg);
+        msg = `${orange(getCaseID())} / ${msg}`;
         utils.pushNewCall(this, callName, {
           msg: msg,
           fcall: f,
