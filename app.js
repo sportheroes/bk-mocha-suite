@@ -38,9 +38,11 @@ const lightblue = input => chalk.keyword('dodgerblue').bold(input);
 const orange = input => chalk.keyword('gold').bold(input);
 
 module.exports = function ({ project, category, service, method }, ctx, f) {
+  const prefix = category.toUpperCase();
+
   let CASE_COUNT = 0;
   const SUITE_NAME = `${blue(project)} - ${blue(category)} > ${lightblue(service)} > ${green(method)}`;
-  const IDENTIFIER = `${service}-${method}`.replace(/[^A-Z-]/g, '');
+  const IDENTIFIER = `${prefix}-${service}-${method}`.replace(/[^A-Z-]/g, '');
   const getCaseID = () => `${IDENTIFIER}-${++CASE_COUNT}`;
 
   // Jasmine fallback
