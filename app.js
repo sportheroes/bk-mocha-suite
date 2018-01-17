@@ -1,14 +1,16 @@
 'use strict';
 
 const chalk = require('chalk');
+const ErrorStackParser = require('error-stack-parser');
 
 var fRegCheck = /^function\s+\(\S+?\)/;
 var generateDescribe = require("./lib/generate");
-var SETUP_METHODS = generateDescribe.SETUP_METHODS;
+var EXCLUSIVE_METHODS = generateDescribe.EXCLUSIVE_METHODS;
 var IT_METHODS = generateDescribe.IT_METHODS;
-var THAT_METHODS = generateDescribe.THAT_METHODS;
-var SET_METHODS = generateDescribe.SET_METHODS;
 var REPLACE_METHOD = generateDescribe.REPLACE_METHOD;
+var SET_METHODS = generateDescribe.SET_METHODS;
+var SETUP_METHODS = generateDescribe.SETUP_METHODS;
+var THAT_METHODS = generateDescribe.THAT_METHODS;
 var _ = require("underscore");
 var utils = require("./lib/utils");
 
@@ -22,7 +24,8 @@ _.defaults(global, {
   afterAllMethod: "afterAll",
   afterEachMethod: "afterEach",
   itMethod: "it",
-  xitMethod: "xit"
+  xitMethod: "xit",
+  onlyMethod: "only",
 });
 
 global.thatMethod = global.itMethod;
@@ -31,6 +34,7 @@ global.setBeforeAllMethod = global.beforeAllMethod;
 global.setBeforeMethod = global.beforeMethod;
 global.setAfterAllMethod = global.afterAllMethod;
 global.setAfterMethod = global.afterMethod;
+global.onlyMethod = global.onlyMethod;
 
 const blue = input => chalk.keyword('slateblue').bold(input);
 const green = input => chalk.keyword('forestgreen').bold(input);
@@ -150,6 +154,23 @@ module.exports = function ({ project, category, service, method }, ctx, f) {
       }
       return this;
     };
+  });
+
+  EXCLUSIVE_METHODS.forEach(function (callName) {
+    TestSuit[callName] = function (msg, f) {
+      if (!f) {
+        return reportFaultyTestCase(callName, msg);
+      }
+
+      msg = `${orange(getCaseID())} / ${msg}`;
+      utils.pushNewCall(this, callName, {
+        msg: msg,
+        fcall: f,
+        useDone: fRegCheck.test(f)
+      });
+
+      return this;
+    }
   });
 
   IT_METHODS.concat(THAT_METHODS).forEach(function (callName) {

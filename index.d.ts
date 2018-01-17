@@ -64,6 +64,7 @@ declare interface MochaSuitFactory {
     xit: TestMethod;
     that: TestMethod;
     xthat: TestMethod;
+    only: TestMethod;
     with: WithMethod;
     replaceWith: ReplaceMethod;
     setBefore: SetMethod;
