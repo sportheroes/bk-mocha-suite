@@ -4,6 +4,8 @@
   "description": "Suite for your mocha tests",
   "main": "app.js",
   "scripts": {
+    "release": "bk-standard-version",
+    "release-major": "bk-standard-version -- --release-as major",
     "test": "mocha"
   },
   "repository": {
