@@ -36,6 +36,19 @@ const blue = input => chalk.keyword('slateblue').bold(input);
 const green = input => chalk.keyword('forestgreen').bold(input);
 const lightblue = input => chalk.keyword('dodgerblue').bold(input);
 const orange = input => chalk.keyword('gold').bold(input);
+const red = input => chalk.keyword('red').bold(input);
+
+const reportFaultyTestCase = (type, msg) => {
+  const formatedStacktrace = ErrorStackParser.parse(new Error());
+  const sourceLine = formatedStacktrace[2].source.trim();
+
+  console.error(red(`Detected broken Suite.${type}() test case`));
+  console.error(red(`Expected syntax: Suite.${type}('description', function) but got:\n`));
+  console.error(orange(`Suite.${type}(${msg})\n`))
+  console.error(red(sourceLine));
+
+  process.exit(2);
+}
 
 module.exports = function ({ project, category, service, method }, ctx, f) {
   const prefix = category.toUpperCase();
@@ -146,6 +159,10 @@ module.exports = function ({ project, category, service, method }, ctx, f) {
           suit: msg
         });
       } else {
+        if (!f) {
+          return reportFaultyTestCase(callName, msg);
+        }
+
         msg = `${orange(getCaseID())} / ${msg}`;
         utils.pushNewCall(this, callName, {
           msg: msg,
