@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/muonjs/mocha-suit/compare/v1.1.0...v1.2.0) (2018-01-22)
+
+
+### ✅ Features
+
+* **Core**: Enforced factory params to be present ([4ea455c](https://github.com/muonjs/mocha-suit/commit/4ea455c) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Core**: Project value can now use APP_NAME as fallback ([1bf3181](https://github.com/muonjs/mocha-suit/commit/1bf3181) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Dependencies**: Added config v1.29.2 ([96d3e0e](https://github.com/muonjs/mocha-suit/commit/96d3e0e) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/muonjs/mocha-suit/compare/v1.0.2...v1.1.0) (2018-01-17)
 
