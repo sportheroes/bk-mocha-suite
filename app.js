@@ -77,10 +77,14 @@ const reportFaultyTestCase = (type, msg) => {
 }
 
 module.exports = function (params, ctx, f) {
-  const { project, category, service, method } = params;
+  let { project, category, service, method } = params;
 
   if (!project) {
-    reportMissingField(params, 'project');
+    project = config.APP_NAME || process.env.APP_NAME;
+
+    if (!project) {
+      reportMissingField(params, 'project');
+    }
   }
 
   if (!category) {
