@@ -1,6 +1,7 @@
 'use strict';
 
 const chalk = require('chalk');
+const config = require('config');
 const ErrorStackParser = require('error-stack-parser');
 
 var fRegCheck = /^function\s+\(\S+?\)/;
@@ -42,22 +43,60 @@ const lightblue = input => chalk.keyword('dodgerblue').bold(input);
 const orange = input => chalk.keyword('gold').bold(input);
 const red = input => chalk.keyword('red').bold(input);
 
+const reportMissingField = (params, name) => {
+  const formatedStacktrace = ErrorStackParser.parse(new Error());
+  const sourceLine = formatedStacktrace[2].source.trim();
+  const prettyPayload = JSON.stringify(params, null, 2);
+
+  console.error(red('Detected broken Suite factory instantiation'));
+  console.error(red(`Field "${name}" is mandatory but got\n`));
+  console.error(orange('const Suite = require(\'@sportheroes/bk-mocha-suite\')('));
+  console.error(orange(`${prettyPayload});\n`));
+  console.error(red(`${sourceLine}\n`));
+
+  if (name === 'project') {
+    console.error(blue('To fix it you can either:'));
+    console.error(blue('- set process.env.APP_NAME at runtime'));
+    console.error(blue('- add "APP_NAME" property in your configuration file'));
+    console.error(blue('- add "project" property in your Suite factory payload'));
+  }
+
+  process.exit(2);
+};
+
 const reportFaultyTestCase = (type, msg) => {
   const formatedStacktrace = ErrorStackParser.parse(new Error());
   const sourceLine = formatedStacktrace[2].source.trim();
 
   console.error(red(`Detected broken Suite.${type}() test case`));
-  console.error(red(`Expected syntax: Suite.${type}('description', function) but got:\n`));
+  console.error(red(`Expected syntax: Suite.${type}('description', function) but got\n`));
   console.error(orange(`Suite.${type}(${msg})\n`))
   console.error(red(sourceLine));
 
   process.exit(2);
 }
 
-module.exports = function ({ project, category, service, method }, ctx, f) {
-  const prefix = category.toUpperCase();
+module.exports = function (params, ctx, f) {
+  const { project, category, service, method } = params;
+
+  if (!project) {
+    reportMissingField(params, 'project');
+  }
+
+  if (!category) {
+    reportMissingField(params, 'category');
+  }
+
+  if (!service) {
+    reportMissingField(params, 'service');
+  }
+
+  if (!method) {
+    reportMissingField(params, 'method');
+  }
 
   let CASE_COUNT = 0;
+  const prefix = category.toUpperCase();
   const SUITE_NAME = `${blue(project)} - ${blue(category)} > ${lightblue(service)} > ${green(method)}`;
   const IDENTIFIER = `${prefix}-${service}-${method}`.replace(/[^A-Z-]/g, '');
   const getCaseID = () => `${IDENTIFIER}-${++CASE_COUNT}`;
