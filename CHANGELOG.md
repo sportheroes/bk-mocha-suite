@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/muonjs/mocha-suit/compare/v1.2.0...v1.3.0) (2018-01-24)
+
+
+### ✅ Features
+
+* **Core**: Ability to declare sinon stubs using simplified syntax ([76e150b](https://github.com/muonjs/mocha-suit/commit/76e150b) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Core**: Stubs history is now automatically cleaned ([9e52ede](https://github.com/muonjs/mocha-suit/commit/9e52ede) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Dependencies**: Added sinon v4.2.1 ([d104008](https://github.com/muonjs/mocha-suit/commit/d104008) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/muonjs/mocha-suit/compare/v1.1.0...v1.2.0) (2018-01-22)
 
