@@ -3,6 +3,7 @@
 const chalk = require('chalk');
 const config = require('config');
 const ErrorStackParser = require('error-stack-parser');
+const sinon = require('sinon');
 
 var fRegCheck = /^function\s+\(\S+?\)/;
 var generateDescribe = require("./lib/generate");
@@ -177,6 +178,7 @@ module.exports = function (params, ctx, f) {
   };
 
   utils.extendSuit(TestSuit, {
+    stubs: [],
     parent: null,
     fcall: f,
     describe: SUITE_NAME,
@@ -254,6 +256,14 @@ module.exports = function (params, ctx, f) {
       return this;
     };
   });
+
+  TestSuit.stub = function(results) {
+    const stub = sinon.stub().returns(results);
+
+    TestSuit.stubs.push(stub)
+
+    return stub;
+  };
 
   TestSuit.replaceWith = function (suit, newSuit) {
     if (!utils.isSuit(suit)) {
