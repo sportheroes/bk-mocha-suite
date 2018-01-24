@@ -328,7 +328,18 @@ module.exports = function (params, ctx, f) {
     return NewSuit;
   };
 
-  TestSuit.run = () => new TestSuit();
+  TestSuit.run = function() {
+    if (TestSuit.stubs.length > 0) {
+      var f = () => utils.resetStubs(this);
+
+      utils.pushNewCall(this, 'afterEach', {
+        fcall: f,
+        useDone: fRegCheck.test(f)
+      });
+    }
+
+    return new TestSuit();
+  };
 
   return TestSuit;
 };
