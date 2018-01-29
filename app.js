@@ -257,7 +257,14 @@ module.exports = function (params, ctx, f) {
     };
   });
 
-  TestSuit.stub = function(results) {
+  TestSuit.stub = function stub(results) {
+    const stub = sinon.stub();
+
+    TestSuit.stubs.push(stub);
+
+    return stub;
+  };
+
     const stub = sinon.stub().returns(results);
 
     TestSuit.stubs.push(stub)
