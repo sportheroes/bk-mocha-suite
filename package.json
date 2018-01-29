@@ -29,7 +29,7 @@
     "chalk": "2.3.0",
     "config": "1.29.2",
     "error-stack-parser": "2.0.1",
-    "sinon": "4.2.1",
+    "sinon": "4.2.2",
     "underscore": "^1.8.3"
   },
   "types": "./mocha-suit.d.ts",
