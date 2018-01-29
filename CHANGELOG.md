@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/muonjs/mocha-suit/compare/v1.3.0...v1.4.0) (2018-01-29)
+
+
+### ✅ Features
+
+* **Core**: Added three new stub methods ([f88cb7f](https://github.com/muonjs/mocha-suit/commit/f88cb7f) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Core**: Stub method now returns unconfigured stub ([3a1080c](https://github.com/muonjs/mocha-suit/commit/3a1080c) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/muonjs/mocha-suit/compare/v1.2.0...v1.3.0) (2018-01-24)
 
