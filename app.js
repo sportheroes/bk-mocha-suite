@@ -265,9 +265,26 @@ module.exports = function (params, ctx, f) {
     return stub;
   };
 
+  TestSuit.stubReturning = function stubReturning(results) {
     const stub = sinon.stub().returns(results);
 
-    TestSuit.stubs.push(stub)
+    TestSuit.stubs.push(stub);
+
+    return stub;
+  };
+
+  TestSuit.stubResolving = function stubResolving(results) {
+    const stub = sinon.stub().resolves(results);
+
+    TestSuit.stubs.push(stub);
+
+    return stub;
+  };
+
+  TestSuit.stubRejecting = function stubRejecting(results) {
+    const stub = sinon.stub().rejects(results);
+
+    TestSuit.stubs.push(stub);
 
     return stub;
   };
