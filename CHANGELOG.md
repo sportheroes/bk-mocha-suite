@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/muonjs/mocha-suit/compare/v1.4.1...v1.4.2) (2018-02-14)
+
+
+### 🔄 Notable changes
+
+* **Dependencies**: Bumped bk-standard-version to v4.9.0 ([d5370ab](https://github.com/muonjs/mocha-suit/commit/d5370ab) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Dependencies**: Bumped chalk version v2.3.1 ([a00a7bc](https://github.com/muonjs/mocha-suit/commit/a00a7bc) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Dependencies**: Bumped sinon version to v4.3.0 ([fcee2fe](https://github.com/muonjs/mocha-suit/commit/fcee2fe) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/muonjs/mocha-suit/compare/v1.4.0...v1.4.1) (2018-01-29)
 
