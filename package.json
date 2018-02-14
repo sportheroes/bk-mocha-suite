@@ -26,8 +26,8 @@
   "homepage": "https://github.com/muonjs/mocha-suit#readme",
   "dependencies": {
     "@types/bluebird": "3.5.20",
-    "chalk": "2.3.0",
-    "config": "1.29.2",
+    "chalk": "2.3.1",
+    "config": "1.29.4",
     "error-stack-parser": "2.0.1",
     "sinon": "4.2.2",
     "underscore": "^1.8.3"
