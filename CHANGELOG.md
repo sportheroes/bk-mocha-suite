@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/muonjs/mocha-suit/compare/v1.4.3...v1.5.0) (2018-03-01)
+
+
+### ✅ Features
+
+* **Core**: Add stubContext method to fast stub sonic context ([ba59da3](https://github.com/muonjs/mocha-suit/commit/ba59da3) - [stombre](https://github.com/stombre))
+
+
+
 <a name="1.4.3"></a>
 ## [1.4.3](https://github.com/muonjs/mocha-suit/compare/v1.4.2...v1.4.3) (2018-03-01)
 
