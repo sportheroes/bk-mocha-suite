@@ -27,9 +27,9 @@
   "dependencies": {
     "@types/bluebird": "3.5.20",
     "chalk": "2.3.1",
-    "config": "1.29.4",
+    "config": "1.30.0",
     "error-stack-parser": "2.0.1",
-    "sinon": "4.3.0",
+    "sinon": "4.4.2",
     "underscore": "^1.8.3"
   },
   "types": "./mocha-suit.d.ts",
