@@ -265,6 +265,32 @@ module.exports = function (params, ctx, f) {
     return stub;
   };
 
+  TestSuit.stubContext = function stubContext(overload = {}) {
+    const stubContext = {
+      globalPayload: {},
+      isCloudWatchActive: null,
+      logger: {
+        getTransactionId: TestSuit.stub(),
+        outputFile: TestSuit.stub(),
+        outputAWS: TestSuit.stub(),
+        setTags: TestSuit.stub(),
+        setOrigin: TestSuit.stub(),
+        appendTags: TestSuit.stub(),
+        fatal: TestSuit.stub(),
+        error: TestSuit.stub(),
+        warn: TestSuit.stub(),
+        log: TestSuit.stub(),
+        debug: TestSuit.stub(),
+        trace: TestSuit.stub(),
+      },
+      loggerId: 'fakeLoggerId',
+      tags: [],
+      ...overload,
+    };
+
+    return stubContext;
+  };
+
   TestSuit.stubReturning = function stubReturning(results) {
     const stub = sinon.stub().returns(results);
 
