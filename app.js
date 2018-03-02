@@ -285,6 +285,7 @@ module.exports = function (params, ctx, f) {
         trace: TestSuit.stub(),
       },
       loggerId: 'fakeLoggerId',
+      next: TestSuit.stub(),
       tags: [],
       ...overload,
     };
