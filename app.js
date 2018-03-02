@@ -279,6 +279,7 @@ module.exports = function (params, ctx, f) {
         fatal: TestSuit.stub(),
         error: TestSuit.stub(),
         warn: TestSuit.stub(),
+        info: TestSuit.stub(),
         log: TestSuit.stub(),
         debug: TestSuit.stub(),
         trace: TestSuit.stub(),
