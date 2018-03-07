@@ -266,27 +266,48 @@ module.exports = function (params, ctx, f) {
   };
 
   TestSuit.stubContext = function stubContext(overload = {}) {
+    const loggerId = 'fakeLoggerId';
+    const loggerMethods = [
+      'appendTags',
+      'debug',
+      'error',
+      'fatal',
+      'info',
+      'log',
+      'outputAWS',
+      'outputFile',
+      'setOrigin',
+      'setTags',
+      'trace',
+      'warn',
+
+      // Other logger methods which requires custom stubbing
+      // 'createChildLogger',
+      // 'getTransactionId',
+    ];
+
+    const stubLogger = () => {
+      const logger = {};
+
+      // Default stubbing
+      loggerMethods.forEach(name => {
+        logger[name] = TestSuit.stub();
+      });
+
+      // Custom stubbing
+      logger.createChildLogger = stubLogger;
+      logger.getTransactionId = () => `${loggerId} > child`;
+
+      return logger;
+    }
+
     const stubContext = {
       createChildLogger: stubLogger,
       getBusOptions: TestSuit.stub(),
       globalPayload: {},
       isCloudWatchActive: null,
-      logger: {
-        getTransactionId: TestSuit.stub(),
-        outputFile: TestSuit.stub(),
-        outputAWS: TestSuit.stub(),
-        setTags: TestSuit.stub(),
-        setOrigin: TestSuit.stub(),
-        appendTags: TestSuit.stub(),
-        fatal: TestSuit.stub(),
-        error: TestSuit.stub(),
-        warn: TestSuit.stub(),
-        info: TestSuit.stub(),
-        log: TestSuit.stub(),
-        debug: TestSuit.stub(),
-        trace: TestSuit.stub(),
-      },
-      loggerId: 'fakeLoggerId',
+      logger: stubLogger(),
+      loggerId,
       next: TestSuit.stub(),
       tags: [],
       ...overload,
