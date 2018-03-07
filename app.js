@@ -267,6 +267,8 @@ module.exports = function (params, ctx, f) {
 
   TestSuit.stubContext = function stubContext(overload = {}) {
     const stubContext = {
+      createChildLogger: stubLogger,
+      getBusOptions: TestSuit.stub(),
       globalPayload: {},
       isCloudWatchActive: null,
       logger: {
