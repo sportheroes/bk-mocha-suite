@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/muonjs/mocha-suit/compare/v1.5.0...v1.6.0) (2018-03-07)
+
+
+### ⏩ Versioning
+
+* **Miscellaneous**: Publish v1.5.1 ([4713a0d](https://github.com/muonjs/mocha-suit/commit/4713a0d) - [stombre](https://github.com/stombre))
+* **Miscellaneous**: Publish v1.5.2 ([0e01df2](https://github.com/muonjs/mocha-suit/commit/0e01df2) - [stombre](https://github.com/stombre))
+
+### ✅ Features
+
+* **StubContext**: Added support for new context methods ([f432482](https://github.com/muonjs/mocha-suit/commit/f432482) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **StubContext**: Revamped logger stubbing to be reusable ([e992776](https://github.com/muonjs/mocha-suit/commit/e992776) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### ✴️ Bug Fixes
+
+* **StubContext**: Add missing info method ([fd3aeff](https://github.com/muonjs/mocha-suit/commit/fd3aeff) - [stombre](https://github.com/stombre))
+* **StubContext**: Missing method ([d2dab89](https://github.com/muonjs/mocha-suit/commit/d2dab89) - [stombre](https://github.com/stombre))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/muonjs/mocha-suit/compare/v1.4.3...v1.5.0) (2018-03-01)
 
