@@ -295,7 +295,7 @@ module.exports = function (params, ctx, f) {
       });
 
       // Custom stubbing
-      logger.createChildLogger = stubLogger;
+      logger.createChild = stubLogger;
       logger.getTransactionId = () => `${loggerId} > child`;
 
       return logger;
