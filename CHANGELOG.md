@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.2"></a>
+## [1.6.2](https://github.com/muonjs/mocha-suit/compare/v1.6.1...v1.6.2) (2018-03-12)
+
+
+### 🔄 Notable changes
+
+* **Dependencies**: Moved chalk, config &sinon to peerDependency ([36e5ec5](https://github.com/muonjs/mocha-suit/commit/36e5ec5) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://github.com/muonjs/mocha-suit/compare/v1.6.0...v1.6.1) (2018-03-12)
 
