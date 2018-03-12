@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/muonjs/mocha-suit/compare/v1.6.0...v1.6.1) (2018-03-12)
+
+
+### 🔄 Notable changes
+
+* **Dependencies**: Bumped Sinon version to v4.4.3 ([ec045ea](https://github.com/muonjs/mocha-suit/commit/ec045ea) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **StubContext**: Cleaned up typo in logger method name ([51dc665](https://github.com/muonjs/mocha-suit/commit/51dc665) - [acostes](https://github.com/acostes))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/muonjs/mocha-suit/compare/v1.5.0...v1.6.0) (2018-03-07)
 
