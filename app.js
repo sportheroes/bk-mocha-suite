@@ -313,6 +313,8 @@ module.exports = function (params, ctx, f) {
       ...overload,
     };
 
+    stubContext.createChild = () => stubContext;
+
     return stubContext;
   };
 
