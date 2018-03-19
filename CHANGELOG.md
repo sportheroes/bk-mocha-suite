@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/muonjs/mocha-suit/compare/v1.6.2...v1.7.0) (2018-03-19)
+
+
+### ✅ Features
+
+* **Miscellaneous**: Add clone to stubContext ([e8b08b0](https://github.com/muonjs/mocha-suit/commit/e8b08b0) - [stombre](https://github.com/stombre))
+
+
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/muonjs/mocha-suit/compare/v1.6.1...v1.6.2) (2018-03-12)
 
