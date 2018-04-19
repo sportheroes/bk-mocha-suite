@@ -341,6 +341,14 @@ module.exports = function (params, ctx, f) {
     return stub;
   };
 
+  TestSuit.assertMatchBetween = function assertMatchBetween(payload, expectations) {
+    const spy = sinon.spy();
+
+    spy(payload);
+
+    return sinon.assert.calledWithMatch(spy, expectations);
+  };
+
   TestSuit.replaceWith = function (suit, newSuit) {
     if (!utils.isSuit(suit)) {
       throw new Error("replaceWith first argument should be suit");
