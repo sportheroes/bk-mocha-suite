@@ -27,7 +27,7 @@
   "peerDependencies": {
     "chalk": "2.X",
     "config": "1.X",
-    "sinon": "4.X"
+    "sinon": ">=4.X <6.X"
   },
   "dependencies": {
     "@types/bluebird": "3.5.20",
