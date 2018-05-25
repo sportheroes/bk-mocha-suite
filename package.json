@@ -1,6 +1,6 @@
 {
   "name": "@sportheroes/bk-mocha-suite",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Suite for your mocha tests",
   "main": "app.js",
   "scripts": {
@@ -38,6 +38,7 @@
   "devDependencies": {
     "@sportheroes/bk-standard-version": "4.11.0",
     "bluebird": "^3.5.1",
+    "config": "^1.30.0",
     "expect.js": "^0.3.1",
     "mocha": "^3.4.2",
     "should": "^11.2.1",

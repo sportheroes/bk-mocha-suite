@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/muonjs/mocha-suit/compare/v1.8.0...v1.9.0) (2018-05-25)
+
+
+### ✅ Features
+
+* **Package**: Added support of `sinon v5.X`  ([8e530c7](https://github.com/muonjs/mocha-suit/commit/8e530c7) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Dependencies**: Bumped bk-standard-version to v4.11.0 ([a29e211](https://github.com/muonjs/mocha-suit/commit/a29e211) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Dependencies**: Bumped underscore & sinon versions ([5698e2b](https://github.com/muonjs/mocha-suit/commit/5698e2b) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/muonjs/mocha-suit/compare/v1.7.0...v1.8.0) (2018-04-19)
 
