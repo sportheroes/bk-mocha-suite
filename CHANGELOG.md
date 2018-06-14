@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/muonjs/mocha-suit/compare/v1.9.0...v1.10.0) (2018-06-14)
+
+
+### ✅ Features
+
+* **Package**: Added support of `sinon v6.X` ([3f20fd0](https://github.com/muonjs/mocha-suit/commit/3f20fd0) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/muonjs/mocha-suit/compare/v1.8.0...v1.9.0) (2018-05-25)
 
