@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/muonjs/mocha-suit/compare/v1.10.0...v1.11.0) (2018-07-05)
+
+
+### ✅ Features
+
+* **Method**: Ability to make sure a method throws ([229bece](https://github.com/muonjs/mocha-suit/commit/229bece) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Dependencies**: Added chai in dev dependencies ([6b318b3](https://github.com/muonjs/mocha-suit/commit/6b318b3) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/muonjs/mocha-suit/compare/v1.9.0...v1.10.0) (2018-06-14)
 
