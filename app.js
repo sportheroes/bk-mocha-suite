@@ -1,5 +1,6 @@
 'use strict';
 
+const { assert } = require('chai');
 const chalk = require('chalk');
 const config = require('config');
 const ErrorStackParser = require('error-stack-parser');
@@ -348,6 +349,19 @@ module.exports = function (params, ctx, f) {
 
     return sinon.assert.calledWithMatch(spy, expectations);
   };
+
+  TestSuit.expectRejection = async function expectRejection(handler, errorMessage) {
+    let unexpectedBehavior;
+
+    try {
+      await handler();
+      unexpectedBehavior = new Error(`Handler finished without throwing the expected error message: ${errorMessage}`);
+    } catch (error) {
+      return error.message.should.deep.equal(errorMessage);
+    }
+
+    return assert.fail(unexpectedBehavior, null, unexpectedBehavior.message);
+  }
 
   TestSuit.replaceWith = function (suit, newSuit) {
     if (!utils.isSuit(suit)) {
