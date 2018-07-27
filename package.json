@@ -27,7 +27,7 @@
   "peerDependencies": {
     "chai": ">=4.X",
     "chalk": "2.X",
-    "config": "1.X",
+    "config": ">=1.X <3.X",
     "sinon": ">=4.X <7.X"
   },
   "dependencies": {
