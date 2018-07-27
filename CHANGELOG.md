@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/muonjs/mocha-suit/compare/v1.11.0...v1.12.0) (2018-07-27)
+
+
+### ✅ Features
+
+* **Package**: Added support of `config v2.X` ([eee57cb](https://github.com/muonjs/mocha-suit/commit/eee57cb) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://github.com/muonjs/mocha-suit/compare/v1.10.0...v1.11.0) (2018-07-05)
 
