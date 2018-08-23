@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.0"></a>
+# [1.13.0](https://github.com/muonjs/mocha-suit/compare/v1.12.0...v1.13.0) (2018-08-23)
+
+
+### ✅ Features
+
+* **Core**: Enabled retry of failed tests up to 4 times ([86c691e](https://github.com/muonjs/mocha-suit/commit/86c691e) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/muonjs/mocha-suit/compare/v1.11.0...v1.12.0) (2018-07-27)
 
