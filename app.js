@@ -303,8 +303,10 @@ module.exports = function (params, ctx, f) {
     }
 
     const stubContext = {
-      createChildLogger: stubLogger,
       clone: () => stubContext,
+      createChildLogger: stubLogger,
+      disengageRequeuingOf: TestSuit.stub(),
+      engageRequeuingOf: TestSuit.stub(),
       getBusOptions: TestSuit.stub(),
       globalPayload: {},
       isCloudWatchActive: null,
