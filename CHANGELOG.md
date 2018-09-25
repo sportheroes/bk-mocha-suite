@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/muonjs/mocha-suit/compare/v1.13.0...v1.14.0) (2018-09-25)
+
+
+### ✅ Features
+
+* **Core**: Added requeuing-related methods to context stub ([18ae689](https://github.com/muonjs/mocha-suit/commit/18ae689) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Dependencies**: Bumped bk-standard-version to v4.13.0 ([1790221](https://github.com/muonjs/mocha-suit/commit/1790221) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.13.0"></a>
 # [1.13.0](https://github.com/muonjs/mocha-suit/compare/v1.12.0...v1.13.0) (2018-08-23)
 
