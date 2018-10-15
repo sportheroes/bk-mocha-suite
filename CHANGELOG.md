@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.1"></a>
+## [1.14.1](https://github.com/muonjs/mocha-suit/compare/v1.14.0...v1.14.1) (2018-10-15)
+
+
+
+
 <a name="1.14.0"></a>
 # [1.14.0](https://github.com/muonjs/mocha-suit/compare/v1.13.0...v1.14.0) (2018-09-25)
 

@@ -1,6 +1,6 @@
 {
   "name": "@sportheroes/bk-mocha-suite",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "Suite for your mocha tests",
   "main": "app.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "chai": ">=4.X",
     "chalk": "2.X",
     "config": ">=1.X <3.X",
-    "sinon": ">=4.X <7.X"
+    "sinon": ">=4.X <8.X"
   },
   "dependencies": {
     "@types/bluebird": "3.5.24",
@@ -45,6 +45,6 @@
     "expect.js": "^0.3.1",
     "mocha": "^3.4.2",
     "should": "^11.2.1",
-    "sinon": ">=4.X <7.X"
+    "sinon": ">=4.X <8.X"
   }
 }
