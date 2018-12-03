@@ -27,7 +27,7 @@
   "peerDependencies": {
     "chai": ">=4.X",
     "chalk": "2.X",
-    "config": ">=1.X <3.X",
+    "config": ">=1.X <4.X",
     "sinon": ">=4.X <8.X"
   },
   "dependencies": {
@@ -41,7 +41,7 @@
     "bluebird": "^3.5.2",
     "chai": ">=4.X",
     "chalk": "2.X",
-    "config": ">=1.X <3.X",
+    "config": ">=1.X <4.X",
     "expect.js": "^0.3.1",
     "mocha": "^3.4.2",
     "should": "^11.2.1",
