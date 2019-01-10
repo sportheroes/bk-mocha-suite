@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.0"></a>
+# [1.16.0](https://github.com/muonjs/mocha-suit/compare/v1.15.0...v1.16.0) (2019-01-10)
+
+
+### ✅ Features
+
+* **Core**: Retries can now be configured (amount & enabling) ([1257313](https://github.com/muonjs/mocha-suit/commit/1257313) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+* **Package**: Added `yn 3.X` ([fc0071a](https://github.com/muonjs/mocha-suit/commit/fc0071a) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+### 🔄 Notable changes
+
+* **Core**: Beautified codebase ([2d721b8](https://github.com/muonjs/mocha-suit/commit/2d721b8) - [JoeTheFkingFrypan](https://github.com/JoeTheFkingFrypan))
+
+
+
 <a name="1.15.0"></a>
 # [1.15.0](https://github.com/muonjs/mocha-suit/compare/v1.14.1...v1.15.0) (2018-12-03)
 
