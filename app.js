@@ -428,7 +428,7 @@ module.exports = function (params, ctx, f) {
     return NewSuit;
   };
 
-  TestSuit.run = function() {
+  TestSuit.run = function () {
     if (TestSuit.stubs.length > 0) {
       var f = () => utils.resetStubs(this);
 
