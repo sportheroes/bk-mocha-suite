@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.1"></a>
+## [1.16.1](https://github.com/muonjs/mocha-suit/compare/v1.16.0...v1.16.1) (2019-06-07)
+
+
+### 🔄 Notable changes
+
+* **Miscellaneous**: Update dependencies ([def144b](https://github.com/muonjs/mocha-suit/commit/def144b)))
+
+
+
 <a name="1.16.0"></a>
 # [1.16.0](https://github.com/muonjs/mocha-suit/compare/v1.15.0...v1.16.0) (2019-01-10)
 
