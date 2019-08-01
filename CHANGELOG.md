@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.2"></a>
+## [1.16.2](https://github.com/muonjs/mocha-suit/compare/v1.16.1...v1.16.2) (2019-08-01)
+
+
+### 🔄 Notable changes
+
+* **Dependencies**: Removed unnecessary bluebird type import ([6f12f78](https://github.com/muonjs/mocha-suit/commit/6f12f78)))
+
+
+
 <a name="1.16.1"></a>
 ## [1.16.1](https://github.com/muonjs/mocha-suit/compare/v1.16.0...v1.16.1) (2019-06-07)
 
