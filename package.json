@@ -28,11 +28,11 @@
     "config": "3.1.0",
     "error-stack-parser": "2.0.2",
     "underscore": "^1.9.1",
-    "yn": ">=2.X"
+    "yn": "4.0.0"
   },
   "types": "./mocha-suit.d.ts",
   "devDependencies": {
-    "@sportheroes/bk-standard-version": "5.0.1",
+    "@sportheroes/bk-standard-version": "5.2.1",
     "bluebird": "^3.5.2",
     "chai": "4.2.0",
     "chalk": "2.4.2",
