@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## <small>1.16.4 (2025-03-21)</small>
+
+* 🔄 [MOD] Bump dependencies ([510acda](https://github.com/muonjs/mocha-suit/commit/510acda))
+
+
+
 <a name="1.16.3"></a>
 ## [1.16.3](https://github.com/muonjs/mocha-suit/compare/v1.16.2...v1.16.3) (2021-08-24)
 
