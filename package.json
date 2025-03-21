@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/muonjs/mocha-suit#readme",
   "dependencies": {
-    "config": "3.1.0",
-    "error-stack-parser": "2.0.2",
-    "underscore": "^1.9.1",
+    "config": "3.3.12",
+    "error-stack-parser": "2.1.4",
+    "underscore": "^1.13.7",
     "yn": "4.0.0"
   },
   "types": "./mocha-suit.d.ts",
   "devDependencies": {
-    "@sportheroes/bk-standard-version": "5.2.1",
-    "bluebird": "^3.5.2",
+    "@sportheroes/bk-standard-version": "5.3.2",
+    "bluebird": "^3.7.2",
     "chai": "4.2.0",
     "chalk": "2.4.2",
     "expect.js": "^0.3.1",
