@@ -1,6 +1,6 @@
 {
   "name": "@sportheroes/bk-mocha-suite",
-  "version": "1.16.4",
+  "version": "1.16.5",
   "description": "Suite for your mocha tests",
   "main": "app.js",
   "scripts": {
